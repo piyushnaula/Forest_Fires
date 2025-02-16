@@ -4,7 +4,8 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
-app=Flask(__name__)
+application=Flask(__name__)
+app=application
 
 # import ridge regressor model and scaler pickle
 ridge_model=pickle.load(open('C:/Users/Piyush Naula/OneDrive/Desktop/Python/Machine Learning/Algerian_Forest_Fires/models/ridge.pkl','rb'))
